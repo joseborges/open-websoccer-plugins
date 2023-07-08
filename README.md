@@ -11,13 +11,13 @@ Please follow CAREFULLY the plugin author's instructions.
 
 You have the full responsability for installing them on your [original openwebsoccer](https://github.com/ihofmann/open-websoccer).
 
-- [Fairplay 5.0 for openwebsoccer 5.x](Fairplay_5.0.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) [Author release](http://www.sim-raisal.de/Forum/showthread.php?tid=32)
+- [Fairplay 5.0 for openwebsoccer 5.x](Fairplay_5.0.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=32)
 
-- [Friendlies 5.2.0 for openwebsoccer 5.1.1](Friendlies_5.2.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) [Author release](http://www.sim-raisal.de/Forum/showthread.php?tid=22)
+- [Friendlies 5.2.0 for openwebsoccer 5.1.1](Friendlies_5.2.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=22)
 
-- [Livematches Block 5.1.1 for openwebsoccer 5.x](LivetickerResults_5.1.1_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) [Author release](http://www.sim-raisal.de/Forum/showthread.php?tid=23)
+- [Livematches Block 5.1.1 for openwebsoccer 5.x](LivetickerResults_5.1.1_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=23)
 
-- [Top-Assist](Top-Assist/) (The author does not want to be mentioned, so the contact details have been removed from the code.) [Author release](http://www.sim-raisal.de/Forum/showthread.php?tid=41)
+- [Top-Assist](Top-Assist/) (The author does not want to be mentioned, so the contact details have been removed from the code.) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=41)
 
 ## Documentation and Issue Tracker
 
