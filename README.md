@@ -7,7 +7,7 @@ The software simulates all matches automatically and in real-time. It can produc
 # Available Plugins (use at your own risk!!!)
 Please follow CAREFULLY the plugin author's instructions since you have the full responsability for installing them on your [original openwebsoccer](https://github.com/ihofmann/open-websoccer).
 
-DISCLAIMER: *I take no responsability over what the plugins does or does not do since I did not code it. Also, understand that, I will not provide any kind of support whatsoever for any plugin of openwebsoccer, I just share them here for all of you to download and enjoy.*
+DISCLAIMER: *I take no responsability whatsoever over what the plugins does or does not do since I did not code it. Also, understand that, I will not provide any kind of support whatsoever for any plugin or openwebsoccer itself, I just share them here for all of you to download and enjoy.*
 
 Recomendations BEFORE you install any plugin:
 
