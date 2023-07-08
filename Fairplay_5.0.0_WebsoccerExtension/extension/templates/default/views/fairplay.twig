@@ -1,0 +1,72 @@
+{% extends "base.twig" %}
+{% import "macros/messagebox.twig" as messagebox %}
+
+{% block page_title %}
+{{ i18n.getMessage("fairplay_title") }}
+{% endblock %}
+
+{% block page_content %}
+
+<form class="form-inline" method="post">
+
+	<label class="control-label" for="country">{{ i18n.getMessage("entity_league") }}</label> 
+	<select id="leagueid" name="leagueid">
+		<option></option>
+	{% for leagueItem in leagues %}
+		<option value="{{ leagueItem.league_id }}"{% if env.getRequestParameter("leagueid") == leagueItem.league_id %} selected{% endif %}>{{ leagueItem.league_country }} - {{ leagueItem.league_name }}</option>
+	{% endfor %}
+	</select>
+
+	<button type="submit" class="btn btn-primary ajaxSubmit" 
+		data-ajaxtarget="pagecontent">{{ i18n.getMessage('button_display') }}</button>
+
+	<input type="hidden" name="page" value="fairplay" />
+</form>
+
+{% if teams is defined and teams|length > 0 %}
+
+	<table id="fptable" class="table sortable" onmouseover=sorttable.makeSortable(document.getElementById('fptable'));>
+		<thead>
+			<tr>
+				<th><span>{{ i18n.getMessage("teamtable_head_name") }}</span></th>
+				<th><span>{{ i18n.getMessage("entity_fairplay_sa_yellow_card") }} <img src="img/icons/card_yellow.png" title="yellow card" /></span></th>
+				<th><span>{{ i18n.getMessage("entity_fairplay_sa_yellow_red_card") }} <img src="img/icons/card_yellow.png" title="yellow card" /><img src="img/icons/card_red.png" title="red card" /></span></th>
+				<th><span>{{ i18n.getMessage("entity_fairplay_sa_red_card") }} <img src="img/icons/card_red.png" title="red card" /></span></th>
+				<th><span>{{ i18n.getMessage("entity_fairplay_minus_points") }}</span></th>
+			</tr>
+		</thead>
+		<tbody>
+
+			{% for team in teams %}
+			<tr>
+				<td>{% if (env.getUser().id > 0 and team.user_id == env.getUser().id) %}<strong>{% endif %}
+					
+					{% if team.picture|length %}
+						<img src="{{ env.getConfig("context_root") }}/uploads/club/{{ team.picture }}" style="max-width: 20px"/>
+					{% endif %}
+					
+					<a href="{{ env.getInternalUrl("team", "id=" ~ team.team_id) }}">{{ team.team_name }}</a>
+					{% if team.user_id > 0 %}
+						<br>
+						{% if team.user_picture|length > 0 %}
+							<a href="{{ env.getInternalUrl("user", "id=" ~ team.user_id) }}"><img src="{{ team.user_picture }}" style="width: 20px; height: 20px"/></a>
+						{% endif %}
+						<small><a href="{{ env.getInternalUrl("user", "id=" ~ team.user_id) }}">{{ team.user_name }}</a></small>
+					{% endif %}
+					{% if (env.getUser().id > 0 and team.user_id == env.getUser().id) %}</strong>{% endif %}
+				</td>
+				<td>{{ team.yellow_card }}</td>
+				<td>{{ team.yellow_red_card }}</td>
+				<td>{{ team.red_card }}</td>
+				<td>{{ team.points }}</td>
+			</tr>
+			{% endfor %}
+		
+		</tbody>
+	</table>
+
+{% else %}
+	{{ messagebox.box(i18n.getMessage("leaguetable_block_noteamsavailable"), "", "info") }}
+{% endif %}
+<p>{{ i18n.getMessage("fairplay_version") }} &copy; Powered by <a href="mailto:{{ i18n.getMessage("fairplay_mail") }}">{{ i18n.getMessage("fairplay_author") }}</a></p>
+{% endblock %}

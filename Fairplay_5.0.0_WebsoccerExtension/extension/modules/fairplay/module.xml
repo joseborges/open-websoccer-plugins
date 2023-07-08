@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../module.dtd">
+<module version="1.0.0">
+
+    <pages>
+        <page
+            id="fairplay"
+            template="fairplay"
+            parentItem="leagues"
+            navitem="true"
+            navweight="8"
+            model="FairplayModel"
+            role="user">
+	        
+			<script file="sorttable.js" />
+            
+            <css file="sorttable.css" />
+        </page>   
+
+    </pages> 
+    
+</module>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+    <message id="fairplay_navlabel">Fairplay</message>
+    <message id="fairplay_title">Fairplay statistics</message>
+    
+    <message id="teamtable_head_name">Club</message>
+    
+    <message id="entity_fairplay_sa_yellow_card">Yellow Cards</message>
+    <message id="entity_fairplay_sa_yellow_red_card">Yellow/red card</message>
+    <message id="entity_fairplay_sa_red_card">Red Card</message> 
+    <message id="entity_fairplay_minus_points">Penalty points</message> 
+
+	<message id="fairplay_version">v5.0.0</message>
+	<message id="fairplay_author">DC|k1x / Pierre Keutel</message>
+	<message id="fairplay_mail">pierre.keutel@yahoo.fr</message>
+</messages>

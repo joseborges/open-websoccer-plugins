@@ -1,0 +1,46 @@
+table.sortable tbody {
+    counter-reset: sortabletablescope;
+}
+table.sortable thead {
+    font-weight: bold;
+    cursor: pointer;
+	background: #F0F0F0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+table.sortable thead tr th.sorttable_sorted, table.sortable thead tr th.sorttable_sorted_reverse {
+  background: #D0D0D0;
+}
+span#sorttable_sortrevind {
+  background-image: url('../img/sorttable/down-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 9px;
+}
+span#sorttable_sortfwdind {
+  background-image: url('../img/sorttable/up-arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 9px;
+}  
+table.sortable thead tr::before {
+    content: "";
+    display: table-cell;
+}
+table.sortable tbody tr::before {
+    content: counter(sortabletablescope);
+    counter-increment: sortabletablescope;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+}
+table.sortable tbody tr:first-child td {
+  background: #F7D358;
+}
+table.sortable tbody tr:nth-last-child(-n+3) td {
+  background: #ffcccc;
+}
