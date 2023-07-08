@@ -11,11 +11,12 @@ DISCLAIMER: *I take no responsability whatsoever over what the plugins does or d
 
 Recomendations BEFORE you install any plugin:
 
-    1) STOP all cronjobs related to YOUR instalation of openwebsoccer
-    2) Make and Download a backup of YOUR instalation files
-    3) Make and Download a backup of YOUR database
-    4) Do not EVER do any of this steps while the game is running
+    1) STOP all cronjobs related to YOUR instalation of openwebsoccer.
+    2) Make and Download a backup of YOUR instalation files.
+    3) Make and Download a backup of YOUR database.
+    4) Do not EVER do any of this steps while the game is running.
     5) ONLY install the plugins AFTER you made sure you have a working BACKUP of your database and files.
+    6) ALWAYS clear cache before checking if plugin is working.
 
 
 - [Fairplay 5.0 for openwebsoccer 5.x](Fairplay_5.0.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=32)
