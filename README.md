@@ -5,11 +5,17 @@ With with OpenWebSoccer-Sim PHP based web application your website visitors can 
 The software simulates all matches automatically and in real-time. It can produces match reports with a live ticker similar to what you know from popular news websites. Setup your own football online game in order to attract new website visitors, make money through premium features or for playing against colleagues in your company intranet. **[Download now!](https://github.com//joseborges/open-websoccer/releases/tag/v5.2.3)**
 
 # Available Plugins (use at your own risk!!!)
-Please follow CAREFULLY the plugin author's instructions.
+Please follow CAREFULLY the plugin author's instructions since you have the full responsability for installing them on your [original openwebsoccer](https://github.com/ihofmann/open-websoccer).
 
-*I have no responsability over what the plugins does or does not do! I did not code it, I do not provide support for it, I just share it here for all of you to enjoy.*
+DISCLAIMER: *I take no responsability over what the plugins does or does not do since I did not code it. Also, understand that, I will not provide any kind of support whatsoever for any plugin of openwebsoccer, I just share them here for all of you to download and enjoy.*
 
-You have the full responsability for installing them on your [original openwebsoccer](https://github.com/ihofmann/open-websoccer).
+Recomendations BEFORE you install any plugin:
+
+    1) Make and Download a backup of YOUR instalation files
+    2) Make and Download a backup of YOUR database
+    3) Do not EVER do any of this steps while the game is running
+    4) ONLY install the plugins AFTER you made sure you have a working BACKUP of your database and files.
+
 
 - [Fairplay 5.0 for openwebsoccer 5.x](Fairplay_5.0.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=32)
 
