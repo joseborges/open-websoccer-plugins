@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE messages SYSTEM "../messages.dtd">
+<messages>
+	<message id="jugendschedulegenerator_navlabel">Jugendspielplan generieren</message>
+	<message id="jugendschedulegenerator_label">Eine komplette Jugendsaison erzeugen</message>
+</messages>

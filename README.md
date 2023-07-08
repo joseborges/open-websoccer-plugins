@@ -21,6 +21,9 @@ You have the full responsability for installing them on your [original openwebso
 
 - [Sponsorprämie](Sponsorprämie/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=42)
 
+- [Leihe](Leihe/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=38)
+
+
 ## Documentation and Issue Tracker
 
 You found a bug or have an idea for a new plugin? Then don't hesitate to open an issue at the [Issue Tracker](https://github.com/joseborges/open-websoccer-plugins/issues).

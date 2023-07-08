@@ -1,0 +1,49 @@
+{% extends "base.twig" %}
+{% import "macros/formelements.twig" as formelements %}
+
+{% block page_title %}
+	{{ i18n.getMessage("lend-player_navlabel") }}:
+	{% if player.player_pseudonym|length > 0  %}
+		{{ player.player_pseudonym }}
+	{% else %}
+		{{ player.player_firstname ~ " " ~ player.player_lastname }}
+	{% endif %}
+{% endblock %}
+
+{% block page_content %}
+
+{{ i18n.getMessage("lend-player_intro") }}
+
+<dl class="dl-horizontal">
+  <dt>{{ i18n.getMessage("entity_player_marktwert") }}</dt>
+  <dd>{{ player.player_marketvalue|number_format(0, ',', ' ')  }} {{ env.getConfig("game_currency") }}</dd>
+
+  <dt>{{ i18n.getMessage("entity_player_vertrag_gehalt") }}</dt>
+  <dd>{{ player.player_contract_salary|number_format(0, ',', ' ')  }} {{ env.getConfig("game_currency") }}</dd>
+</dl>
+
+<p style="margin-top: 30px"><i class="icon-arrow-right"></i> <a href="{{ env.getInternalUrl("player", "id=" ~ player.player_id) }}">{{ i18n.getMessage("player_navlabel") }}</a></p>
+
+<center>
+<form class="form-horizontal" method="post">
+
+<strong>{{ i18n.getMessage("lending_player_dauer") }} </strong> 
+<div class="btn-group" data-toggle="buttons-radio">
+    <button type="button" class="btn" onClick="$('#dauer').val('1');">Bis zur Winterpause</button>
+    <button type="button" class="btn" onClick="$('#dauer').val('2');">Bis zum Saisonende</button>
+</div>
+<br/>
+<br/><strong>{{ i18n.getMessage("leihspieler_gebuehr") }} </strong> <input type="number" max="{{ player.player_marketvalue }}" placeholder="Max. {{ player.player_marketvalue|number_format(0, ',', ' ')  }} {{ env.getConfig("game_currency") }}"" name="fee" value=""/>
+
+
+	
+	<div class="form-actions">
+		<button type="submit" class="btn btn-primary">{{ i18n.getMessage('button_submit') }}</button>
+		<a href="{{ env.getInternalUrl("myteam") }}" class="btn">{{ i18n.getMessage('button_cancel') }}</a>
+	</div>
+  <input type="hidden" name="dauer" id="dauer"  value=""/>
+	<input type="hidden" name="page" value="lend-player"/>
+	<input type="hidden" name="id" value="{{ env.getRequestParameter('id') }}"/>
+	<input type="hidden" name="action" value="lend-player"/>
+</form> </center>
+{% endblock %}

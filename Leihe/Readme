@@ -1,0 +1,134 @@
+Alle Dateien aus dem ZIP-Ordner hochladen.
+
+In der Datenbank folgenden Befehl ausführen
+Achtung die Tabellenbezeichnung nach euren Vorgaben anpassen
+
+z.B aus `_spieler` wird `ws3_spieler`
+
+ALTER TABLE `_spieler` ADD `lending_dauer` TINYINT(3) NULL DEFAULT NULL AFTER `lending_matches`;
+ALTER TABLE `_saison` ADD `halbsaison_beendet` ENUM('1','0') NOT NULL DEFAULT '0' AFTER `beendet`;
+
+
+In \modules\season\module.xml
+
+nach
+ <column
+ id="entity_season_beendet"
+ field="SeasonTab.beendet"
+ type="boolean"
+ filter="true" /> 
+
+dies einfügen
+ <column
+ id="entity_season_halbsaison_beendet"
+ field="SeasonTab.halbsaison_beendet"
+ type="boolean"
+ filter="true" /> 
+
+weiter unten
+
+nach
+ <field id="beendet" type="boolean" />
+
+ dies einfügen
+ <field id="halbsaison_beendet" type="boolean" /> 
+
+weiter unten
+
+nach
+ <adminpage id="complete-season" filename="season-complete" navcategory="season" permissionrole="r_spiele" />
+dies einfügen
+ <adminpage id="half-complete-season" filename="half-season-complete" navcategory="season" permissionrole="r_spiele" /> 
+
+
+In \modules\season\adminmessages_de
+
+einfügen
+
+<message id="half-complete-season_navlabel">Hinrunden beenden</message>
+<message id="half_season_complete_title">Hinrunde beenden</message>
+<message id="half-complete-season_introduction">Durch auswählen einer Saison wird die Hinrunde als "beendet" markiert und verliehene Spieler (Bis Winterpause) kehren zu ihren Teams zurück. Für folgende Hinrunden gibt es keine Ligaspiele mehr zu berechnen:</message>
+
+
+In \modules\season\entitymessages_de
+
+einfügen
+
+<message id="entity_season_halbsaison_beendet">Hinrunde ist beendet</message>
+
+
+In \templates\default\views\myteam-overview
+
+folgende Zeile ersetzen
+
+<br><small>+ {{ i18n.getMessage("entity_player_lending_fee") }}: {{ player.lending_fee|number_format(0, ',', ' ') }} {{ env.getConfig("game_currency") }}</small>
+
+mit ersetzen
+
+<br><small>Spieler ist ausgeliehen</small>
+
+
+in \templates\default\views\player-details
+
+nach
+
+{% elseif player.lending_owner_id == 0 and player.lending_fee > 0 and env.getConfig("lending_enabled") %}
+
+<div class="alert alert-info">
+
+diese zeile
+
+<p>{{ i18n.getMessage("lending_player_lendable_info", player.lending_fee|number_format(0, ',', ' ') ~ " " ~ env.getConfig("game_currency"))|raw }}</p>
+
+ersetzen mit
+
+{% if player.lending_dauer == 1 %}
+
+<p>{{ i18n.getMessage("lending_player_dauer_winter", player.lending_fee|number_format(0, ',', ' ') ~ " " ~ env.getConfig("game_currency"))|raw }}</p>
+
+{% elseif player.lending_dauer == 2 %}
+
+<p>{{ i18n.getMessage("lending_player_dauer_sommer", player.lending_fee|number_format(0, ',', ' ') ~ " " ~ env.getConfig("game_currency"))|raw }}</p>
+
+{% endif %}
+
+
+
+In \classes\services\PlayersDataService.class
+
+bei
+
+public static function getPlayersOfTeamById(WebSoccer $websoccer, DbConnection $db, $clubId, $nationalteam = FALSE, $considerBlocksForCups = FALSE, $considerBlocks = TRUE) {
+
+nach
+
+'lending_owner_id' => 'lending_owner_id', 'transfermarkt' => 'transfermarket'
+
+einfügen
+
+'lending_dauer' => 'lending_dauer'
+
+Achtung Komma nicht vergessen sollte dann so aussehen
+
+'lending_owner_id' => 'lending_owner_id', 'transfermarkt' => 'transfermarket', 'lending_dauer' => 'lending_dauer'
+
+
+weiter unten
+
+
+
+bei
+
+public static function getPlayerById(WebSoccer $websoccer, DbConnection $db, $playerId) {
+
+nach
+
+$columns['P.lending_owner_id'] = 'lending_owner_id';
+$columns['L.name'] = 'lending_owner_name';
+$columns['P.lending_fee'] = 'lending_fee';
+$columns['P.lending_matches'] = 'lending_matches';
+$columns['P.lending_dauer'] = 'lending_dauer';
+
+einfügen
+
+$columns['P.lending_dauer'] = 'lending_dauer';

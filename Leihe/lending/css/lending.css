@@ -1,0 +1,9 @@
+.lool {
+  display: none;
+}
+
+
+input[type=checkbox]:checked ~ div.lool {
+  display:block;
+  color: red;
+}

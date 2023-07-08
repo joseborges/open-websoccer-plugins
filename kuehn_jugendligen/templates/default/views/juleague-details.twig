@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block page_title %}
+{{ i18n.getMessage("league_navlabel") }}
+{% endblock %}
+
+{% block page_content %}
+
+  {% for leagueItem in juleagues %}
+  <a href="#currentTable" class="ajaxLink"
+			data-ajaxtarget="jugendleaguetable_block" data-ajaxblock="jugendleaguetable" data-ajaxquerystr="id={{ leagueItem.league_id }}&leagueid={{ leagueItem.league_id }}"><img src="{{ env.getConfig("context_root") }}/uploads/jugendleague/{{ leagueItem.picture }}" title="{{ leagueItem.league_country }}-{{ leagueItem.league_name }}" alt="{{ leagueItem.league_country }}"></a>
+  {% endfor %}
+
+{% endblock %}

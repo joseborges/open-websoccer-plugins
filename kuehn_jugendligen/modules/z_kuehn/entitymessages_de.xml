@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+	<message id="entity_jugendleague">Jugendliga</message>
+	<message id="entity_jugendleague_name">Name</message>
+	<message id="entity_jugendleague_kurz">Kürzel</message>
+	<message id="entity_jugendleague_land">Land</message>
+	<message id="entity_jugendleague_p_steh">Durch. Auslastung Stehplätze</message>
+	<message id="entity_jugendleague_p_sitz">Durch. Auslastung Sitzplätze</message>
+	<message id="entity_jugendleague_p_haupt_steh">Durch. Auslastung Stehplätze (Haupttribüne)</message>
+	<message id="entity_jugendleague_p_haupt_sitz">Durch. Auslastung Sitzplätze (Haupttribüne)</message>
+	<message id="entity_jugendleague_p_vip">Durch. Auslastung VIP-Loge</message>
+	<message id="entity_jugendleague_picture">Logo</message>
+
+	<message id="entity_club_jugend_liga_id">Jugendliga</message>
+	<message id="entity_club_ju_sa_tore">Jugendliga - Tore (Saison)</message>
+	<message id="entity_club_ju_sa_gegentore">Jugendliga - Gegentore (Saison)</message>
+	<message id="entity_club_ju_sa_spiele">Jugendliga - Spiele (Saison)</message>
+	<message id="entity_club_ju_sa_siege">Jugendliga - Siege (Saison)</message>
+	<message id="entity_club_ju_sa_niederlagen">Jugendliga - Niederlagen (Saison)</message>
+	<message id="entity_club_ju_sa_unentschieden">Jugendliga - Unentschieden (Saison)</message>
+	<message id="entity_club_ju_sa_punkte">Jugendliga - Punkte (Saison)</message>
+
+	<message id="entity_club_juliga_id">Jugendliga</message>
+
+	<message id="entity_jugendleague_preis_steh">Durch. Preis für Stehplätze</message>
+	<message id="entity_jugendleague_preis_sitz">Durch. Preis für Sitzplätze</message>
+	<message id="entity_jugendleague_preis_vip">Durch. Preis für VIP-Logen</message>
+</messages>

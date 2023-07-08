@@ -1,0 +1,12 @@
+
+{% extends "blocks/jugendtable_base.twig" %}
+
+{% block table_header %}
+
+	{% if env.getRequestParameter("seasonid") == null and env.getRequestParameter("type") != null %}
+	<p><i class="icon-info-sign"></i> <em>{{ i18n.getMessage("leaguetable_timedelay_info") }}</em></p>
+	{% endif %}
+  {% endblock %}
+
+
+
