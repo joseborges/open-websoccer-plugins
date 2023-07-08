@@ -1,9 +1,9 @@
-Upload all files from the ZIP folder.
+Alle Dateien aus dem ZIP-Ordner hochladen.
 
-Run the following command in the database
-Attention adapt the table name according to your specifications
+In der Datenbank folgenden Befehl ausführen
+Achtung die Tabellenbezeichnung nach euren Vorgaben anpassen
 
-E.g. `_spieler` becomes `ws3_spieler`
+z.B aus `_spieler` wird `ws3_spieler`
 
 ALTER TABLE `_spieler` ADD `lending_dauer` TINYINT(3) NULL DEFAULT NULL AFTER `lending_matches`;
 ALTER TABLE `_saison` ADD `halbsaison_beendet` ENUM('1','0') NOT NULL DEFAULT '0' AFTER `beendet`;
@@ -11,40 +11,39 @@ ALTER TABLE `_saison` ADD `halbsaison_beendet` ENUM('1','0') NOT NULL DEFAULT '0
 
 In \modules\season\module.xml
 
-after
+nach
  <column
  id="entity_season_beendet"
  field="SeasonTab.beendet"
  type="boolean"
  filter="true" /> 
 
-insert this
+dies einfügen
  <column
  id="entity_season_halbsaison_beendet"
  field="SeasonTab.halbsaison_beendet"
  type="boolean"
  filter="true" /> 
 
-further down
+weiter unten
 
-after
+nach
  <field id="beendet" type="boolean" />
 
  dies einfügen
  <field id="halbsaison_beendet" type="boolean" /> 
 
- nsert this
+weiter unten
 
-after
+nach
  <adminpage id="complete-season" filename="season-complete" navcategory="season" permissionrole="r_spiele" />
-
-insert this
+dies einfügen
  <adminpage id="half-complete-season" filename="half-season-complete" navcategory="season" permissionrole="r_spiele" /> 
 
 
 In \modules\season\adminmessages_de
 
-insert
+einfügen
 
 <message id="half-complete-season_navlabel">Hinrunden beenden</message>
 <message id="half_season_complete_title">Hinrunde beenden</message>
@@ -53,35 +52,35 @@ insert
 
 In \modules\season\entitymessages_de
 
-insert
+einfügen
 
 <message id="entity_season_halbsaison_beendet">Hinrunde ist beendet</message>
 
 
 In \templates\default\views\myteam-overview
 
-replace the following line
+folgende Zeile ersetzen
 
 <br><small>+ {{ i18n.getMessage("entity_player_lending_fee") }}: {{ player.lending_fee|number_format(0, ',', ' ') }} {{ env.getConfig("game_currency") }}</small>
 
-replace with
+mit ersetzen
 
 <br><small>Spieler ist ausgeliehen</small>
 
 
 in \templates\default\views\player-details
 
-after
+nach
 
 {% elseif player.lending_owner_id == 0 and player.lending_fee > 0 and env.getConfig("lending_enabled") %}
 
 <div class="alert alert-info">
 
-this line
+diese zeile
 
 <p>{{ i18n.getMessage("lending_player_lendable_info", player.lending_fee|number_format(0, ',', ' ') ~ " " ~ env.getConfig("game_currency"))|raw }}</p>
 
-replace with
+ersetzen mit
 
 {% if player.lending_dauer == 1 %}
 
@@ -97,31 +96,32 @@ replace with
 
 In \classes\services\PlayersDataService.class
 
-at
+bei
 
 public static function getPlayersOfTeamById(WebSoccer $websoccer, DbConnection $db, $clubId, $nationalteam = FALSE, $considerBlocksForCups = FALSE, $considerBlocks = TRUE) {
 
-after
+nach
 
 'lending_owner_id' => 'lending_owner_id', 'transfermarkt' => 'transfermarket'
 
-insert
+einfügen
 
 'lending_dauer' => 'lending_dauer'
 
-Attention don't forget the comma should look like this
+Achtung Komma nicht vergessen sollte dann so aussehen
 
 'lending_owner_id' => 'lending_owner_id', 'transfermarkt' => 'transfermarket', 'lending_dauer' => 'lending_dauer'
 
 
-further down
+weiter unten
 
 
-at
+
+bei
 
 public static function getPlayerById(WebSoccer $websoccer, DbConnection $db, $playerId) {
 
-after
+nach
 
 $columns['P.lending_owner_id'] = 'lending_owner_id';
 $columns['L.name'] = 'lending_owner_name';
@@ -129,6 +129,6 @@ $columns['P.lending_fee'] = 'lending_fee';
 $columns['P.lending_matches'] = 'lending_matches';
 $columns['P.lending_dauer'] = 'lending_dauer';
 
-insert
+einfügen
 
 $columns['P.lending_dauer'] = 'lending_dauer';
