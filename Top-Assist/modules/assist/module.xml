@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../module.dtd">
+<module version="5.1.1">
+
+    <pages>
+
+	  <page
+            id="topassist"
+            template="assist"
+            model="TopAssistModel"
+            role="user,guest"
+            navitem="true"
+            navweight="5"
+            parentItem="leagues" />
+    </pages> 
+    
+
+    
+</module>

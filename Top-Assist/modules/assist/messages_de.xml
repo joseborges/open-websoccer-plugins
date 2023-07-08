@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE messages SYSTEM "../messages.dtd">
+<messages>
+    <message id="topscorers_navlabel">Top-Scorer</message>
+    <message id="topscorers_head_score">Score</message>
+   <message id="topassist_navlabel">Top-Vorlagengeber</message>
+</messages>
