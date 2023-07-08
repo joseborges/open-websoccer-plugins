@@ -1,5 +1,5 @@
 # open-websoccer-plugins
-This repository pretends to be the home of any plugin made for OpenWebSoccer-Sim. 
+This repository pretends to be the home of all plugins made for OpenWebSoccer-Sim that i can find online. 
 
 With with OpenWebSoccer-Sim PHP based web application your website visitors can manage a virtual fantasy football (soccer) team and play with it against other users. They can set the tactics for the next match, trade players, train their team, look for new talents in their youth section or extend their stadium. 
 The software simulates all matches automatically and in real-time. It can produces match reports with a live ticker similar to what you know from popular news websites. Setup your own football online game in order to attract new website visitors, make money through premium features or for playing against colleagues in your company intranet. **[Download now!](https://github.com//joseborges/open-websoccer/releases/tag/v5.2.3)**
@@ -11,10 +11,11 @@ DISCLAIMER: *I take no responsability over what the plugins does or does not do 
 
 Recomendations BEFORE you install any plugin:
 
-    1) Make and Download a backup of YOUR instalation files
-    2) Make and Download a backup of YOUR database
-    3) Do not EVER do any of this steps while the game is running
-    4) ONLY install the plugins AFTER you made sure you have a working BACKUP of your database and files.
+    1) STOP all cronjobs related to YOUR instalation of openwebsoccer
+    2) Make and Download a backup of YOUR instalation files
+    3) Make and Download a backup of YOUR database
+    4) Do not EVER do any of this steps while the game is running
+    5) ONLY install the plugins AFTER you made sure you have a working BACKUP of your database and files.
 
 
 - [Fairplay 5.0 for openwebsoccer 5.x](Fairplay_5.0.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=32)
