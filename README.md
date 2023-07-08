@@ -17,7 +17,9 @@ You have the full responsability for installing them on your [original openwebso
 
 - [Livematches Block 5.1.1 for openwebsoccer 5.x](LivetickerResults_5.1.1_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=23)
 
-- [Top-Assist](Top-Assist/) (The author does not want to be mentioned, so the contact details have been removed from the code.) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=41)
+- [Top-Assist](Top-Assist/) (The author does not want to be mentioned, so the contact details have been removed from the code) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=41)
+
+- [Sponsorprämie](Sponsorprämie/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=42)
 
 ## Documentation and Issue Tracker
 
