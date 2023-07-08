@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../module.dtd">
+<module version="2.0.0">
+  
+  <admin>
+        <adminpage
+            id="mwa"
+            entity="mwa"
+            navcategory="kuehn"
+            permissionrole="r_daten" >
+
+            <entity dbtable="anpassungen AS AnpassungenTab" >
+
+                <overview add="false" delete="true" edit="false">
+
+
+                      
+                        
+                      <column
+                        id="entity_anpassungen_spieler_id"
+                        field="CONCAT(PlayerTab.vorname, ' ', IF(PlayerTab.kunstname IS NOT NULL, CONCAT('\'', PlayerTab.kunstname, '\' '), ''), PlayerTab.nachname)"
+                        type="text"
+                        sort="true"
+                        filter="true" />
+                        
+                       <column
+                        id="entity_anpassungen_marktwert_alt"
+                        field="PlayerTab.marktwert"
+                        type="text"
+                        sort="true"
+                        filter="true" /> 
+                        
+                       <column
+                        id="entity_anpassungen_marktwert_neu"
+                        field="AnpassungenTab.marktwert_neu"
+                        type="text"
+                        sort="true" />
+                        
+                        <column
+                        id="entity_anpassungen_position_main_alt"
+                        field="PlayerTab.position_main"
+                        type="text"
+                        sort="true" />
+                        
+                        <column
+                        id="entity_anpassungen_position_main"
+                        field="AnpassungenTab.position_main"
+                        type="text"
+                        sort="true" />
+                        
+                        <column
+                        id="entity_anpassungen_position_second_alt"
+                        field="PlayerTab.position_second"
+                        type="text"
+                        sort="true" />
+                        
+                        <column
+                        id="entity_anpassungen_position_second"
+                        field="AnpassungenTab.position_second"
+                        type="text"
+                        sort="true" />
+                        
+                        <column
+                        id="entity_anpassungen_link"
+                        field="AnpassungenTab.link"
+                        type="url"
+                        sort="true" />
+                        
+                        <column
+                        id="entity_anpassungen_admin_approval_pending"
+                        field="AnpassungenTab.admin_approval_pending"
+                        type="boolean"
+                        sort="true" 
+                        filter="true"
+                        converter="MwaApprovalLinkConverter" />
+                        
+                        <column
+                        id="entity_anpassungen_admin_abgelehnt_pending"
+                        field="AnpassungenTab.admin_approval_pending"
+                        type="boolean"
+                        sort="true" 
+                        filter="true"
+                        converter="MwaAbgelehntLinkConverter" />   
+                        
+                     <join type="INNER" jointable="spieler AS PlayerTab" joincondition="AnpassungenTab.spieler_id = PlayerTab.id" />
+                </overview>
+
+
+            </entity>
+        </adminpage>
+    </admin>
+  
+        <pages>
+       
+          <page
+              id="mwa"
+	            template="mwa"
+	            model="PlayerDetailsModel"
+	            role="user">
+            <css file="mwa.css" />
+          </page>
+
+    </pages>
+    
+    
+    <actions>
+
+  <action id="mwabeantragen" controller="MWAbeantragenController" role="user" log="false">
+    <param id="player_id" type="number" />
+    <param id="marktwert_neu" type="number" />
+    <param id="posi1" type="text" />
+    <param id="posi2" type="text" />
+    <param id="link" type="text" />
+
+  </action>
+  
+	
+  </actions>
+</module>

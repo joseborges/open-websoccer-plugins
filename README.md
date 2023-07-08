@@ -24,13 +24,15 @@ Recomendations BEFORE you install any plugin:
 
 - [Livematches Block 5.1.1 for openwebsoccer 5.x](LivetickerResults_5.1.1_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=23)
 
-- [Top-Assist](Top-Assist/) (The author does not want to be mentioned, so the contact details have been removed from the code) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=41)
+- [Top-Assist](Top-Assist/) By Anonymous (The author does not want to be mentioned, so the contact details have been removed from the code) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=41)
 
-- [Sponsorprämie](Sponsorprämie/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=42)
+- [Sponsorprämie](Sponsorprämie/) by Unknown - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=42)
 
-- [Leihe](Leihe/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=38)
+- [Leihe](Leihe/) by Unknown - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=38)
 
-- [kuehn_jugendligen](kuehn_jugendligen/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=95)
+- [kuehn_jugendligen](kuehn_jugendligen/) by Unknown - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=95)
+
+- [Anpassung](Anpassung/) by Kuehn - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=96)
 
 ## Documentation and Issue Tracker
 

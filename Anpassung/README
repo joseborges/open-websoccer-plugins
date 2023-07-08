@@ -1,0 +1,85 @@
+You must/can make the following changes.
+
+1) In the \templates\default\views\myteam-overview.twig
+
+
+AFTER:
+
+{% if env.getConfig("enable_player_resignation") %}
+
+<li><a href="#fire{{ player.id }}Modal" role="button" data-toggle="modal"><i class="icon-remove-circle"></i> {{ i18n.getMessage("fireplayer_button") }}</a></li>
+
+{% endif %}
+
+
+INSERT:
+
+<li><a href="{{ env.getInternalUrl("mwa", "id=" ~ player.id) }}"><i class="icon-pencil"></i> Spieler anpassen</a></li>
+
+
+
+
+
+2) In \modules\actionlogs\messages_en.xml add
+
+<message id="activitylog_mwabeantragen">%s hat eine Spieleranpassung beantragt.</message>
+
+
+
+
+3) Upload the remaining files, insert the table into the database and possibly rename it.
+
+
+Attention in this version, the strength, technique and salary will be adjusted depending on the market value. To make your own adjustments, look at \admin\actions\mwaapprove.inc.php.
+
+
+This script was written by Kuehn at the time and not by myself, but I also provide support for this tool if there are problems.
+If there are problems please write in this post
+
+
+
+
+
+
+
+
+
+
+
+
+Folgende Änderungen müsst\könnt ihr vornehmen.
+
+
+In der \templates\default\views\myteam-overview.twig
+
+nach:
+
+{% if env.getConfig("enable_player_resignation") %}
+
+<li><a href="#fire{{ player.id }}Modal" role="button" data-toggle="modal"><i class="icon-remove-circle"></i> {{ i18n.getMessage("fireplayer_button") }}</a></li>
+
+{% endif %}
+
+dies hier einfügen
+
+<li><a href="{{ env.getInternalUrl("mwa", "id=" ~ player.id) }}"><i class="icon-pencil"></i> Spieler anpassen</a></li>
+
+
+
+
+In \modules\actionlogs\messages_de.xml
+
+<message id="activitylog_mwabeantragen">%s hat eine Spieleranpassung beantragt.</message>
+
+
+
+
+
+Die restlichen Dateien hochladen, die Tabelle in die Datenbank einfügen und evtl. umbenennen.
+
+
+Achtung in dieser Version wird die Stärke,Technik und das Gehalt abhängig vom Marktwert, angepasst. Um eigene Anpassungen vorzunehmen schaut euch \admin\actions\mwaapprove.inc.php an.
+
+
+Dieses Skript wurde von Kuehn damals geschrieben und nicht von mir selber, des weiteren leiste ich aber bei Problem support zu diesem Tool.
+Wenn es Probleme gibt bitte in diesen Post schreiben

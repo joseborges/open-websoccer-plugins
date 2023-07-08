@@ -1,0 +1,46 @@
+/*!
+ *css für mwa
+ *
+ */
+
+
+.btn-mwa {
+  color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25);
+  background-color:#1fb05e;
+  background-image:-moz-linear-gradient(top,#21b963,#157840);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#21b963),to(#157840));
+  background-image:-webkit-linear-gradient(top,#21b963,#157840);
+  background-image:-o-linear-gradient(top,#21b963,#157840);
+  background-image:linear-gradient(to bottom,#21b963,#157840);
+  background-repeat:repeat-x;
+  border-color:#157840 #157840 #0a371e;
+  border-color:rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+  *background-color:#157840;
+ 
+  
+  filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.btn-mwa.active,
+.btn-mwa.disabled,
+.btn-mwa:active,
+.btn-mwa:focus,
+.btn-mwa:hover,
+.btn-mwa[disabled] {
+  color:#fff;
+  background-color:#a82315;
+  *background-color:#126235;
+}  
+.btn-mwa.active,
+.btn-mwa:active {
+  background-color:#0e4d29 \9;
+}
+
+.lool {
+  display: none;
+}
+
+
+input[type=checkbox]:checked ~ div.lool {
+  display:block;
+  color: red;
+}

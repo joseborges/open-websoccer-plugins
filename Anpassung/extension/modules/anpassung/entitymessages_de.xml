@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE messages SYSTEM "../messages.dtd">
+<messages>
+     
+    <message id="entity_anpassungen">Anpassungen</message>
+     <message id="entity_mwa">MW-Anpassung</message>
+     <message id="entity_anpassungen_spieler_id">Spieler</message>
+     <message id="entity_anpassungen_marktwert_alt">Alter Marktwert</message>
+     <message id="entity_anpassungen_marktwert_neu">Neuer Marktwert</message>
+     <message id="entity_anpassungen_admin_approval_pending">Freigeben!</message>
+     <message id="entity_anpassungen_admin_abgelehnt_pending">Ablehnen!</message>
+     <message id="entity_anpassungen_link">TM-Link</message>
+     <message id="entity_anpassungen_position_main">Neue HP</message>
+     <message id="entity_anpassungen_position_second">Neue NP</message>
+     <message id="entity_anpassungen_position_main_alt">Alte HP</message>
+     <message id="entity_anpassungen_position_second_alt">Alte NP</message>
+     
+     
+     
+</messages>
+

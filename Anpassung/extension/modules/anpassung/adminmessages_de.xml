@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE messages SYSTEM "../messages.dtd">
+<messages>
+    <message id="category_kuehn_navlabel">Spieleranpassungen</message> 
+	<message id="mwa_approval_success">Spieler wurde erfolgreich angepasst</message>
+  <message id="mwa_approval_abgelehnt">Spieleranpassung wurde erfolgreich abgelehnt</message>
+  <message id="button_ablehnen">Ablehnen</message>
+</messages>

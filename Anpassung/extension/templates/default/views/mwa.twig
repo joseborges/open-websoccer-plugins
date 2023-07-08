@@ -1,0 +1,113 @@
+
+{% extends "base.twig" %}
+
+{% block page_title %}
+{{ i18n.getMessage("anpassung_navlabel") }}
+{% endblock %}
+
+{% block page_content %}
+
+{% if player.player_picture|length > 0 %}
+<div style="text-align: center; margin-bottom: 10px;">
+<img src="{{ env.getConfig("context_root") }}/uploads/player/{{ player.player_picture }}" class="img-rounded">
+</br>{{ player.player_firstname }} {% if player.player_pseudonym|length > 0 %}"{{ player.player_pseudonym }}" {% endif %}{{ player.player_lastname }}
+</div>
+{% endif %}
+<form>
+<div class="row-fluid">
+			<div class="span6">
+
+				<dl class="dl-horizontal">
+
+				  {% if player.player_position_main|length > 0 %}
+				  <dt>{{ i18n.getMessage("entity_player_position_main") }}</dt>
+				  <dd>{{ i18n.getMessage("option_" ~ player.player_position_main) }}</dd>
+				  {% endif %}
+
+          				  {% if player.player_position_main|length > 0 %}
+				  <dt>Neue Hauptposition?</dt>
+				  <dd> <div> 
+            <input type="checkbox" id="wahlposi1"> 
+            <div class="lool" ></label><br>
+             <div class="btn-group" id="btn" name="wahlposi1" data-toggle="buttons-radio">
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('T');">T</button></br>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('LV');">LV</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('IV');">IV</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('RV');">RV</button></br>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('LM');">LM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('DM');">DM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('ZM');">ZM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('OM');">OM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('RM');">RM</button></br>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('LS');">LS</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('MS');">MS</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi1').val('RS');">RS</button>
+                  </div>
+              </div>
+            </div></dd>
+				  {% endif %}
+          
+         </dl>
+		
+      	<dl class="dl-horizontal">
+				  
+           {% if player.player_position_second|length > 0 %}
+				  <dt>{{ i18n.getMessage("entity_player_position_second") }}</dt>
+				  <dd>{{ i18n.getMessage("option_" ~ player.player_position_second) }}</dd>
+				  {% endif %}
+          
+				  <dt>Neue Nebenposition?</dt>
+				  <dd> <div> 
+            <input type="checkbox" id="wahlposi2"> 
+            <div class="lool" ></label><br>
+             <div class="btn-group" id="btn" name="wahlposi2" data-toggle="buttons-radio">
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('T');">T</button></br>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('LV');">LV</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('IV');">IV</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('RV');">RV</button></br>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('LM');">LM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('DM');">DM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('ZM');">ZM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('OM');">OM</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('RM');">RM</button></br>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('LS');">LS</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('MS');">MS</button>
+                <button type="button" class="btn btn-mwa" onClick="$('#posi2').val('RS');">RS</button>
+                  </div>
+              </div>
+            </div></dd>
+				  
+				</dl>
+			  
+				<dl class="dl-horizontal">
+				  
+				  <dt>{{ i18n.getMessage("entity_player_marktwert") }}</dt>
+				  <dd>{{ player.player_marketvalue|number_format(0, ',', ' ')  }} {{ env.getConfig("game_currency") }}</dd>
+          
+          <dt>Neuer Marktwert?</dt>
+				  <dd><div> 
+            <input type="checkbox" id="marktwert_neu"> 
+            <div class="lool" ></label><br><input type="number" min="0" placeholder="Neuen Marktwert eingeben" name="marktwert_neu" value=""/></div>
+            </div></dd>
+				  
+				</dl>
+			</div>
+		</div>
+     
+				              
+                   		
+
+                     {% if player.player_pseudonym|length > 0 and player.player_firstname|length < 1 %}
+                     <input type="hidden" name="link" value="http://transfermarkt.de/schnellsuche/ergebnis/schnellsuche?query={{ player.player_pseudonym }}&x=0&y=0"/>
+                        {% else %}
+                     <input type="hidden" name="link" value="http://transfermarkt.de/schnellsuche/ergebnis/schnellsuche?query={{ player.player_firstname }}+{{ player.player_lastname }}"/>
+                     {% endif %}
+                     
+                     <input type="hidden" name="player_id" value="{{ env.getRequestParameter('id') }}"/>
+                     <input type="hidden" name="posi1" id="posi1"  value=""/>
+                     <input type="hidden" name="posi2" id="posi2"  value=""/>
+                     <input type="hidden" name="action" value="mwabeantragen"/>
+				              <center><button type="submit" class="btn btn-primary">Anpassung beantragen</button></center>
+                     </form>
+                    
+{% endblock %}

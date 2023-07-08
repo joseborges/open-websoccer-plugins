@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+	 <message id="anpassung_navlabel">Spieler anpassen</message>
+      <message id="mwa_navlabel">Spieler Anpassung</message>
+      <message id="mwa_antrag_success">Ein Admin wird schnellstmöglich den Antrag bearbeiten</message>
+      <message id="mwa_antrag_warning">Für diesen Spieler wurde bereits ein Antrag gestellt!</message>
+       
+      <message id="spieler_angepasst">Die Anpassungen des Spielers {spieler} wurden gerade durchgeführt.</message>
+      <message id="spieler_nicht_angepasst">Die Anpassungen des Spielers {spieler} wurde abgelehnt. Wahrscheinlich war eine Position oder der Marktwert nicht korrekt. Du kannst es aber erneut versuchen.</message>
+</messages>
