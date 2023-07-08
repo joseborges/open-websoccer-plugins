@@ -23,6 +23,7 @@ You have the full responsability for installing them on your [original openwebso
 
 - [Leihe](Leihe/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=38)
 
+- [kuehn_jugendligen](kuehn_jugendligen/) (Unknown author) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=95)
 
 ## Documentation and Issue Tracker
 
