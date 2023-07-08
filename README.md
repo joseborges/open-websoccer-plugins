@@ -7,11 +7,16 @@ The software simulates all matches automatically and in real-time. It can produc
 # Available Plugins (use at your own risk!!!)
 Please follow CAREFULLY the plugin author's instructions.
 
-*I have no responsability over what the plugins does or does not do! I did not code it, I do not provide support for it, I just share it here for all of you to enjoy. You have the full responsability wither to install it or not on your [original openwebsoccer](https://github.com/ihofmann/open-websoccer).*
+*I have no responsability over what the plugins does or does not do! I did not code it, I do not provide support for it, I just share it here for all of you to enjoy.*
+
+You have the full responsability for installing them on your [original openwebsoccer](https://github.com/ihofmann/open-websoccer).
 
 - [Fairplay 5.0 for openwebsoccer 5.x](Fairplay_5.0.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>)
 
 - [Friendlies 5.2.0 for openwebsoccer 5.1.1](Friendlies_5.2.0_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>)
+
+- [Livematches Block 5.1.1 for openwebsoccer 5.x](LivetickerResults_5.1.1_WebsoccerExtension/) by Pierre Keutel (<pierre.keutel@yahoo.fr>)
+
 
 ## Documentation and Issue Tracker
 

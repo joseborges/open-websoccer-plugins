@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE messages SYSTEM "../messages.dtd">
+<messages>
+
+	<message id="match_livematches_title">Livespiele - Jetzt Live!</message>
+	<message id="liveticker_version">v5.1.1</message>
+	<message id="liveticker_author">DC|k1x / Pierre Keutel</message>
+	<message id="liveticker_mail">pierre.keutel@yahoo.fr</message>
+	
+</messages>
