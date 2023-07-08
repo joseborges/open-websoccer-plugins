@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+	
+	<message id="settings_tab_friendly">Match amical</message>
+	
+	<message id="settings_label_friendlies_on_off">Activer les matches amicales (MA)</message>
+	<message id="settings_label_friendlies_per_day">Nombre de MA par jour</message>
+	
+	<message id="settings_label_friendlies_time_difference">Décalage</message>
+	<message id="settings_label_friendlies_time_difference_help">en Minutes: Donne le décalage de temps (en minutes) entre le moment quand le match est fixé et le moment du coup d'envoi</message>
+	
+	<message id="settings_label_friendlies_bonus">Activer bonus pour matches amicaux</message>
+	<message id="settings_label_friendlies_bonus_win">Bonus pour victoire</message>
+	<message id="settings_label_friendlies_bonus_win_help">valeur doit être >= 0 (valeurs négatives seront convertis)</message>
+	<message id="settings_label_friendlies_bonus_draw">Bonus pour nul</message>
+	<message id="settings_label_friendlies_bonus_draw_help">valeur doit être >= 0 (valeurs négatives seront convertis)</message>
+	<message id="settings_label_friendlies_bonus_loss">Bonus pour défait</message>
+	<message id="settings_label_friendlies_bonus_loss_help">valeur peut être négative</message>
+	
+	<message id="settings_label_friendlies_nationalteam_on_off">Match amical pour équipe nationale</message>
+	<message id="settings_label_friendlies_nationalteam_on_off_help">Ici vous pouvez activer/désactiver les matches amicaux pour les équipes nationales.</message>
+
+</messages>

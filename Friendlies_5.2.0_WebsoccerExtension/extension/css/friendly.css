@@ -1,0 +1,13 @@
+/* Additional CSS Declarations for FriendlySchedioartFootballSkin
+   Bootstrap 2.3.2
+   -----------------------------------------------------
+*/
+
+.input-append .add-on,.input-prepend .add-on{display:inline-block;width:auto;height:28px;min-width:16px;padding:4px 5px;font-size:14px;font-weight:normal;line-height:20px;text-align:center;text-shadow:0 1px 0 #ffffff;background-color:#eeeeee;border:1px solid #ccc;}
+.input-append .add-on,.input-prepend .add-on,.input-append .btn,.input-prepend .btn,.input-append .btn-group>.dropdown-toggle,.input-prepend .btn-group>.dropdown-toggle{vertical-align:top;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;}
+
+.input-append,.input-prepend{display:inline-block;margin-bottom:10px;vertical-align:middle;font-size:0;white-space:nowrap;}.input-append input,.input-prepend input,.input-append select,.input-prepend select,.input-append .uneditable-input,.input-prepend .uneditable-input,.input-append .dropdown-menu,.input-prepend .dropdown-menu,.input-append .popover,.input-prepend .popover{font-size:14px;}
+
+#timepicker1.input-small,  #datepicker1.input-small{height: 28px;}
+/* #calendar.add-on, #clock.add-on {height: 36px;} */
+.input.bootstrap-timepicker-minute {width: 40px; height: 50px;}

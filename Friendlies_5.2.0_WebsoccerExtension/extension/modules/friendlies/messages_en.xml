@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+    <message id="friendly_navlabel">Friendly</message>
+    <message id="friendly-schedule_navlabel">Create friendly</message>
+    <message id="friendlytodaymatches_navlabel">Friendlies today/planned</message>
+    <message id="friendlyschedule_navlabel">Schedule friendly</message>
+	<message id="friendly-matchset_navlabel">Friendly confirmation</message>
+	<message id="friendly-match_navlabel">Invitation for friendly send</message>
+	<message id="friendly-openmatches_navlabel">Open friendlies</message>
+	<message id="friendlyopenmatches_navlabel">Not validated friendlies</message>
+	
+	<message id="friendlyopenmatches_description">Information: You will find here all open friendly request which need a your confirmation or your opponents.</message>
+    
+    <message id="friendly_club_label">Club</message>
+    <message id="friendly_date_label">Date</message>
+    <message id="friendly_with_nationalteam">Friendly with national team (%s)</message>
+    <message id="friendlydate_help">The time difference between the start of the game and now has to be at least %d minutes.</message>
+    <message id="friendly_success">Successfully processed!</message>
+    <message id="friendly_accept_success">The game %s was succesfully scheduled.</message>
+    <message id="friendly_decline_success">The game %s was cancelled.</message>
+	
+	<message id="friendly_schedule_err_timestamp">The time for the scheduled friendly is not correct. 
+	Between now and the game have to be a %d minutes time gap..</message>
+	<message id="friendly_schedule_err_opponent_ownteam">You cannot schedule a friendly against your own club (%s).</message>
+	<message id="friendly_schedule_err_opponent_nomanager">You cannot schedule a friendly against a club (%s) without manager.</message>
+	<message id="friendly_schedule_err_own_fs">You have already played or planned %s friendlies on this date (max number)</message>
+	<message id="friendly_schedule_err_opponent_fs">Your opponent has already played or planned %s friendlies on this date (max number).</message>
+	<message id="friendly_schedule_err_opponent_nationalteam">You cannot schedule a friendly against a national team (%s) with your club team.</message>
+	<message id="friendly_schedule_err_opponent_not_valid">You cannot schedule a friendly for national teams against a club team (%s).</message>
+	<message id="friendly_schedule_err_opponent_own_nationalteam">You cannot schedule a friendly against your own national team (%s).</message>
+	
+	<message id="friendly_option_accept_refuse">Accept/refuse friendly.</message>
+	
+	<message id="friendly-match_invitation_send">%s : Your invitation for the friendly was sent. Your opponent has now to confirm the invitation.</message>
+	
+	<message id="decline-friendly">Decline friendly</message>
+	<message id="accept-friendly">Accept friendly</message>
+	<message id="decline-friendly_navlabel">Friendly</message>
+	<message id="decline-friendly_title">Decline friendly</message>
+	<message id="accept-friendly_navlabel">Friendly</message>
+	<message id="accept-friendly_title">Confirm friendly</message>
+	<message id="friendly-declined_navlabel">Friendly</message>
+	<message id="friendly-declined-ok_navlabel">Friendly - cancellation</message>
+	<message id="friendly-accepted_navlabel">Friendly</message>
+	<message id="friendly-accepted-ok_navlabel">Friendly - confirmation</message>
+	
+	<message id="button_decline">Decline</message>
+	
+	<message id="friendly_not_your_match">The match selected is not available since your team is not participating.</message>
+	
+	<message id="friendly_matchrequest_notification">The team <strong>{team}</strong> has invited your team match for a friendly on {date}.</message>
+	<message id="friendly_matchrequest_accept_notification">The team <strong>{team}</strong> has <strong>accepted</strong> the invitation for the friendly on {date}.</message>
+	<message id="friendly_matchrequest_decline_notification">The team <strong>{team}</strong> has <strong>declined</strong> the invitation for the friendly on {date}.</message>
+
+	<message id="friendly_bonus_win_subject">Bonus victory</message>
+	<message id="friendly_bonus_draw_subject">Bonus draw</message>
+	<message id="friendly_bonus_loss_subject">Bonus loss</message>
+	
+	<message id="friendly_sender_subject">Friendly</message>
+
+	<message id="friendly_version">v5.2.0</message>
+	<message id="friendly_author">DC|k1x / Pierre Keutel</message>
+	<message id="friendly_mail">pierre.keutel@yahoo.fr</message>
+</messages>

@@ -1,0 +1,51 @@
+{% macro datepicker(fieldId, label, dateValue, timeValue, required = false, errormsg = null, helptext = null) %}
+
+{% if errormsg[fieldId] is defined %}
+        {% set error = errormsg[fieldId] %}
+{% else %}
+        {% set error = '' %}
+{% endif %}
+<div class="control-group{% if error|length > 0 %} error{% endif %}">
+    <label class="control-label" for="{{ fieldId }}">
+        {% if required %}
+                <strong>{{ label }}</strong>
+        {% else %}
+                {{ label }}
+        {% endif %}
+    </label>
+	<div class="controls">
+	<div class="input-append date datepicker" data-date-format="d.m.yyyy">
+        	<input type="text" name="{{ fieldId }}_date" value="{{ dateValue }}" class="input-small">
+        	<span class="add-on"><i class="icon-calendar"></i></span>
+	</div>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro datetimepicker(fieldId, label, dateValue, timeValue, required = false, errormsg = null, helptext = null) %}
+
+{% if errormsg[fieldId] is defined %}
+        {% set error = errormsg[fieldId] %}
+{% else %}
+        {% set error = '' %}
+{% endif %}
+<div class="control-group{% if error|length > 0 %} error{% endif %}">
+    <label class="control-label" for="{{ fieldId }}">
+        {% if required %}
+                <strong>{{ label }}</strong>
+        {% else %}
+                {{ label }}
+        {% endif %}
+    </label>
+	<div class="controls">
+	<div class="input-append date datepicker" data-date-format="d.m.yyyy">
+        	<input id="datepicker1" type="text" name="{{ fieldId }}_date" value="{{ dateValue }}" class="input-small">
+        	<span class="add-on"><i class="icon-calendar"></i></span>
+	</div>
+	<div class="input-append bootstrap-timepicker">
+        	<input id="timepicker1" type="text" name="{{ fieldId }}_time" value="{{ timeValue }}" class="input-small">
+        	<span class="add-on"><i class="icon-time"></i></span>
+	</div>
+	</div>
+</div>
+{% endmacro %}

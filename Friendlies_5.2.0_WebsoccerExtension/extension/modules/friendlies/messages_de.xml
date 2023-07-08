@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+    <message id="friendly_navlabel">FS-Spiele</message>
+    <message id="friendly-schedule_navlabel">FS ansetzen</message>
+    <message id="friendlytodaymatches_navlabel">Heutige/geplante Freundschaftsspiele</message>
+    <message id="friendlyschedule_navlabel">Freundschaftsspiel ansetzen</message>
+	<message id="friendly-matchset_navlabel">FS Bestätigung</message>
+	<message id="friendly-match_navlabel">Einladung abgeschickt</message>
+	<message id="friendly-openmatches_navlabel">Offene FS-Spiele</message>
+	<message id="friendlyopenmatches_navlabel">Noch nicht bestätigte FS-Spiele</message>
+	
+	<message id="friendlyopenmatches_description">Info: Hier finden sie alle noch nicht vom Gegner oder ihnen bestätigten Freundschaftspielanfragen.</message>
+    
+    <message id="friendly_club_label">Verein</message>
+    <message id="friendly_date_label">Datum</message>
+    <message id="friendly_with_nationalteam">FS mit Nationalteam (%s)</message>
+    <message id="friendlydate_help">Der Unterschied zwischen Ansetzungszeitpunkt und der aktuellen Zeit muss mindestens %d Minuten betragen.</message>
+    <message id="friendly_success">Erfolgreich bearbeitet!</message>
+    <message id="friendly_accept_success">Das Spiel %s wurde erfolgreich angesetzt.</message>
+    <message id="friendly_decline_success">Das Spiel %s wurde abgesagt.</message>
+	
+	<message id="friendly_schedule_err_timestamp">Die Uhrzeit für das angesetzte FS ist nicht korrekt. 
+	Es müssen mindestens %d Minuten zwischen Austragunszeitpunkt und "jetzt" liegen.</message>
+	<message id="friendly_schedule_err_opponent_ownteam">Sie können kein FS gegen Ihren eigenen Club (%s) ansetzen.</message>
+	<message id="friendly_schedule_err_opponent_nomanager">Sie können kein FS gegen einen managerlosen Club (%s) ansetzen.</message>
+    <message id="friendly_schedule_err_own_fs">Sie haben bereits %s Freundschaftsspiele an diesem Tag absolviert oder in Planung (max. Anzahl).</message>
+	<message id="friendly_schedule_err_opponent_fs">Ihr Gegner hat bereits %s Freundschaftsspiele an diesem Tag absolviert oder in Planung (max. Anzahl).</message>
+	<message id="friendly_schedule_err_opponent_nationalteam">Sie können kein Freundschaftsspiel mit Ihrem Vereinsteam gegen ein Nationalteam (%s) ansetzen.</message>
+	<message id="friendly_schedule_err_opponent_not_valid">Sie können kein Freundschaftsspiel für Nationalteams gegen ein Vereinsteam (%s) ansetzen.</message>
+	<message id="friendly_schedule_err_opponent_own_nationalteam">Sie können kein FS gegen Ihr eigenes Nationalteam (%s) ansetzen.</message>
+	
+	<message id="friendly_option_accept_refuse">Freundschaftsspiel annehmen/ablehnen.</message>
+	
+	<message id="friendly-match_invitation_send">%s : Ihre Einladung für das FS wurde versand. Ihr Gegner muss dieser Einladung nun zustimmen.</message>
+	
+	<message id="decline-friendly">FS absagen</message>
+	<message id="accept-friendly">FS annehmen</message>
+	<message id="decline-friendly_navlabel">Freundschaftsspiel</message>
+	<message id="decline-friendly_title">Spielanfrage absagen</message>
+	<message id="accept-friendly_navlabel">Freundschaftsspiel</message>
+	<message id="accept-friendly_title">Spielanfrage bestätigen</message>
+	<message id="friendly-declined_navlabel">Freundschaftsspiel</message>
+	<message id="friendly-declined-ok_navlabel">FS - Absage</message>
+	<message id="friendly-accepted_navlabel">Freundschaftsspiel</message>
+	<message id="friendly-accepted-ok_navlabel">FS - Zusage</message>
+	
+	<message id="button_decline">Absagen</message>
+	
+	<message id="friendly_not_your_match">Das gesuchte Spiel kann nicht ausgewählt werden, da keine Beteiligung ihres Vereins vorliegt.</message>
+	
+	<message id="friendly_matchrequest_notification">Das Team <strong>{team}</strong> hat Ihnen eine Anfrage für ein Freundschaftsspiel am {date} geschickt.</message>
+	<message id="friendly_matchrequest_accept_notification">Das Team <strong>{team}</strong> hat Ihre Anfrage für das Freundschaftsspiel am {date} <strong>akzeptiert</strong>.</message>
+	<message id="friendly_matchrequest_decline_notification">Das Team <strong>{team}</strong> hat die Anfrage für das Freundschaftsspiel am {date} <strong>abgesagt</strong>.</message>
+
+	<message id="friendly_bonus_win_subject">Siegprämie</message>
+	<message id="friendly_bonus_draw_subject">Prämie Unentschieden</message>
+	<message id="friendly_bonus_loss_subject">Prämie Niederlage</message>
+	
+	<message id="friendly_sender_subject">Freundschaftsspiel</message>
+
+	<message id="friendly_version">v5.2.0</message>
+	<message id="friendly_author">DC|k1x / Pierre Keutel</message>
+	<message id="friendly_mail">pierre.keutel@yahoo.fr</message>
+</messages>

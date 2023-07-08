@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+	
+	<message id="settings_tab_friendly">Freundschaftsspiele</message>
+	
+	<message id="settings_label_friendlies_on_off">Freundschaftsspiele (FS) aktivieren</message>
+	<message id="settings_label_friendlies_per_day">Anzahl FS pro Tag</message>
+	
+	<message id="settings_label_friendlies_time_difference">Zeitunterschied</message>
+	<message id="settings_label_friendlies_time_difference_help">Minuten: Gibt den Zeitunterschied zwischen Ansetzung und Austragung in Minuten an</message>
+	
+	<message id="settings_label_friendlies_bonus">Prämie für Freundschaftsspiele (FS) aktivieren</message>
+	<message id="settings_label_friendlies_bonus_win">Prämie für FS Sieg</message>
+	<message id="settings_label_friendlies_bonus_win_help">Betrag muss positiv (>= 0) sein (negative Beträge werden konvertiert)</message>
+	<message id="settings_label_friendlies_bonus_draw">Prämie für FS Unentschieden</message>
+	<message id="settings_label_friendlies_bonus_draw_help">Betrag muss positiv (>= 0) sein (negative Beträge werden konvertiert)</message>
+	<message id="settings_label_friendlies_bonus_loss">Prämie für FS Niederlage</message>
+	<message id="settings_label_friendlies_bonus_loss_help">Betrag kann negativ sein.</message>
+	
+	<message id="settings_label_friendlies_nationalteam_on_off">FS für Nationalteams</message>
+	<message id="settings_label_friendlies_nationalteam_on_off_help">Hiermit können Freundschaftsspiele für Nationalteams aktiviert/deaktiviert werden.</message>
+</messages>

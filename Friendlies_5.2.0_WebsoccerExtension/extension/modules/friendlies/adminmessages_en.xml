@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+	
+	<message id="settings_tab_friendly">Friendlies</message>
+	
+	<message id="settings_label_friendlies_on_off">Activate friendlies</message>
+	<message id="settings_label_friendlies_per_day">Friendlies per day</message>
+	
+	<message id="settings_label_friendlies_time_difference">Time difference</message>
+	<message id="settings_label_friendlies_time_difference_help">minutes: Gives the time difference between the time when match was set and play time</message>
+	
+	<message id="settings_label_friendlies_bonus">Activate bonus for friendlies</message>
+	<message id="settings_label_friendlies_bonus_win">Bonus for friendly victory</message>
+	<message id="settings_label_friendlies_bonus_win_help">only values >= 0 are accepted (negative values are converted)</message>
+	<message id="settings_label_friendlies_bonus_draw">Bonus for friendly draw</message>
+	<message id="settings_label_friendlies_bonus_draw_help">only values >= 0 are accepted (negative values are converted)</message>
+	<message id="settings_label_friendlies_bonus_loss">Bonus for friendly lost</message>
+	<message id="settings_label_friendlies_bonus_loss_help">value can be negative</message>
+	
+	<message id="settings_label_friendlies_nationalteam_on_off">Friendlies for national teams</message>
+	<message id="settings_label_friendlies_nationalteam_on_off_help">Here you can activate/deactivate friendlies for national teams.</message>
+
+</messages>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../module.dtd">
+<module version="1.0.0">
+  
+  <pages>
+        <page
+            id="friendly"
+            template="friendly-matches"
+            navitem="true"
+            navweight="7"
+            role="user" 
+	    	navitemOnlyForConfigEnabled="friendlies_on_off" />
+            
+        <page
+            id="friendly-schedule"
+            template="friendly-schedule"
+            model="FriendlyCreateMatchModel"
+            navitem="true"
+            navweight="0"
+            role="user"
+            parentItem="friendly">
+            <script file="bootstrap-datepicker/js/bootstrap-datepicker.js" />
+            <script file="bootstrap-datepicker/js/locales/bootstrap-datepicker.de.js" />
+            <script file="bootstrap-timepicker/js/bootstrap-timepicker.min.js" />
+            <script file="friendly.js" />
+            
+            <css file="bootstrap-timepicker.min.css" />
+            <css file="datepicker.css" />
+            <css file="friendly.css" />
+        </page>
+		
+		<page
+            id="friendly-matchset"
+            template="friendly-matchset"
+            model="FriendlyScheduledMatchModel"
+            navitem="false"
+            role="user" />
+		
+		<page
+            id="friendly-openmatches"
+            template="friendly-openmatches"
+            model="FriendlyOpenMatchModel"
+            navitem="true"
+            navweight="1"
+            role="user"
+            parentItem="friendly" />
+            	
+        <page
+	        id="decline-friendly"
+	        template="decline-friendly"
+	        model="FriendlyAcceptDeclineModel"
+	        role="user" />
+	        
+	    <page
+	        id="accept-friendly"
+	        template="accept-friendly"
+	        model="FriendlyAcceptDeclineModel"
+	        role="user" />
+			
+  </pages>
+  
+  <blocks>
+  		<block
+            id="friendly-matches" 
+            template="results-list"
+            model="FriendlyMatchesModel"
+            includepages="friendly"
+            area="content_top"
+            role="user" />
+			
+		<block
+            id="friendly-openmatches" 
+            template="myopenfriendlies-list"
+            model="FriendlyOpenMatchModel"
+            includepages="friendly-openmatches"
+            area="content_top"
+            role="user" />
+        
+    </blocks>
+  
+  <actions>
+		<action id="schedulefriendly" controller="FriendlyController" role="user">
+			<param id="friendlyopponent" type="text" required="true" />
+			<param id="friendlydp_date" type="date" required="true" />
+			<param id="friendlynationalteam" type="boolean" />
+			<param id="friendlydp_time" type="text" required="true" validator="TimeValidator"/>
+		</action>
+		<action id="accept" controller="FriendlyAcceptDeclineController" role="user">
+			<param id="id" type="number" required="true" />
+			<param id="action" type="text" required="true" />
+		</action>
+		<action id="decline" controller="FriendlyAcceptDeclineController" role="user">
+			<param id="id" type="number" required="true" />
+			<param id="action" type="text" required="true" />
+		</action>
+  </actions>
+  
+  <settings>
+      <setting id="friendlies_on_off" category="friendly" type="boolean" default="1" />
+	  <setting id="friendlies_time_difference" category="friendly" type="number" default="20" />
+  	  <setting id="friendlies_per_day" category="friendly" type="number" default="3" />
+  	  <setting id="friendlies_nationalteam_on_off" category="friendly" type="boolean" default="0" />
+  	  <setting id="friendlies_bonus" category="friendly" type="boolean" default="0" />
+  	  <setting id="friendlies_bonus_win" category="friendly" type="number" default="1000" />
+  	  <setting id="friendlies_bonus_draw" category="friendly" type="number" default="500" />
+  	  <setting id="friendlies_bonus_loss" category="friendly" type="number" default="250" />
+  </settings>
+  
+  <plugins>
+  	  <eventlistener event="MatchCompletedEvent" class="FriendlyPlugin" method="handleBonusAfterFriendlyCompleted" />
+  </plugins>
+  
+</module>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE module SYSTEM "../messages.dtd">
+<messages>
+    <message id="friendly_navlabel">Match amical</message>
+    <message id="friendly-schedule_navlabel">Planifier un match amical</message>
+    <message id="friendlytodaymatches_navlabel">Matches amicales aujourd'hui/planifier</message>
+    <message id="friendlyschedule_navlabel">Planifier un match amical</message>
+	<message id="friendly-matchset_navlabel">Confirmation match amical</message>
+	<message id="friendly-match_navlabel">Invitation envoyée</message>
+	<message id="friendly-openmatches_navlabel">Match amicales non-confirmés</message>
+	<message id="friendlyopenmatches_navlabel">Match amicales non-confirmés</message>
+	
+	<message id="friendlyopenmatches_description">Info: Ici, vous trouviez tous les matchs non-confirmés par vous ou l'adversaire.</message>
+    
+    <message id="friendly_club_label">Club</message>
+    <message id="friendly_date_label">Date</message>
+    <message id="friendly_with_nationalteam">Match amical pour équipe nationale (%s)</message>
+    <message id="friendlydate_help">Le décalage entre la création du match et le coup d'envoi doit être au moins %d minutes.</message>
+    <message id="friendly_success">Modification avec succès!</message>
+    <message id="friendly_accept_success">Le match %s est créer avec succès.</message>
+    <message id="friendly_decline_success">Le match %s est annulé avec succès.</message>
+	
+	<message id="friendly_schedule_err_timestamp">L'horaire pour le match à fixé n'est pas correcte. 
+	Le décalage entre la création du match et le coup d'envoi doit être au moins %d minutes.</message>
+	<message id="friendly_schedule_err_opponent_ownteam">Vous ne pouvez pas planifier un match amical contre votre propre club (%s).</message>
+	<message id="friendly_schedule_err_opponent_nomanager">Vous ne pouvez pas planifier un match amical contre un club (%s) sans manager.</message>
+    <message id="friendly_schedule_err_own_fs">Vous avez déjà effectué ou planifier %s matches amicales à cette date (nombre max).</message>
+	<message id="friendly_schedule_err_opponent_fs">Votre adversaire a déjà effectué ou planifier %s matches amicales à cette date (nombre max).</message>
+	<message id="friendly_schedule_err_opponent_nationalteam">Vous ne pouvez pas planifier un match amical contre une équipe national (%s) avec votre équipe de ligue.</message>
+	<message id="friendly_schedule_err_opponent_not_valid">Vous ne pouvez pas planifier un match amical pour des équipes nationales contre une équipe non-national (%s).</message>
+	<message id="friendly_schedule_err_opponent_own_nationalteam">Vous ne pouvez pas planifier un match amical contre votre propre équipe nationale (%s).</message>
+	
+	<message id="friendly_option_accept_refuse">Accepter/Refuser match amical.</message>
+	
+	<message id="friendly-match_invitation_send">%s : votre invitation pour le match amical a été envoyé. Maintenant votre adversaire doit accepter l'invitation.</message>
+	
+	<message id="decline-friendly">Refuser match amical</message>
+	<message id="accept-friendly">Accepter match amical</message>
+	<message id="decline-friendly_navlabel">Match amical</message>
+	<message id="decline-friendly_title">Refuser demande match amical</message>
+	<message id="accept-friendly_navlabel">Match amical</message>
+	<message id="accept-friendly_title">Accepter demande match amical</message>
+	<message id="friendly-declined_navlabel">Match amical</message>
+	<message id="friendly-declined-ok_navlabel">Match amical - réponse négative</message>
+	<message id="friendly-accepted_navlabel">Match amical</message>
+	<message id="friendly-accepted-ok_navlabel">Match amical - réponse positive</message>
+	
+	<message id="button_decline">Refuser</message>
+	
+	<message id="friendly_not_your_match">Le match choisi ne peut pas être sélectionner car votre club ne participe pas à ce match.</message>
+	
+	<message id="friendly_matchrequest_notification">Le club <strong>{team}</strong> vous a envoyé un invitation pour le {date} pour un match amical.</message>
+	<message id="friendly_matchrequest_accept_notification">Le club <strong>{team}</strong> <strong>a accepté</strong> la demande pour un match amical le {date}.</message>
+	<message id="friendly_matchrequest_decline_notification">Le club <strong>{team}</strong> <strong>a refusé</strong> la demande pour un match amical le {date}.</message>
+
+	<message id="friendly_bonus_win_subject">Bonus victoire</message>
+	<message id="friendly_bonus_draw_subject">Bonus nul</message>
+	<message id="friendly_bonus_loss_subject">Bonus défaite</message>
+
+	<message id="friendly_sender_subject">Match amical</message>
+	
+	<message id="friendly_version">v5.2.0</message>
+	<message id="friendly_author">DC|k1x / Pierre Keutel</message>
+	<message id="friendly_mail">pierre.keutel@yahoo.fr</message>
+</messages>
