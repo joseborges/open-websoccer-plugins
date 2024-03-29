@@ -31,7 +31,7 @@ Recomendations BEFORE you install any plugin:
 
 - [Leihe](Leihe/) by Unknown - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=38)
 
-- [kuehn_jugendligen](kuehn_jugendligen/) by Unknown - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=95)
+- [kuehn_jugendligen](kuehn_jugendligen/) by Kuehn - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=95)
 
 - [Anpassung](Anpassung/) by Kuehn - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=96)
 
