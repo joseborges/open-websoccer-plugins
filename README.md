@@ -27,9 +27,9 @@ Recomendations BEFORE you install any plugin:
 
 - [Top-Assist](Top-Assist/) By Anonymous (The author does not want to be mentioned, so the contact details have been removed from the code) - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=41)
 
-- [Sponsorprämie](Sponsorprämie/) by Unknown - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=42)
+- [Sponsorprämie](Sponsorprämie/) by Kuehn - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=42)
 
-- [Leihe](Leihe/) by Unknown - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=38)
+- [Leihe](Leihe/) by Kuehn - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=38)
 
 - [kuehn_jugendligen](kuehn_jugendligen/) by Kuehn - [Original release](http://www.sim-raisal.de/Forum/showthread.php?tid=95)
 
