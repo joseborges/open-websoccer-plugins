@@ -20,7 +20,7 @@ INSERT:
 
 
 
-2) In \modules\actionlogs\messages_en.xml add
+2) In \modules\actionlogs\messages_en.xml and messages_de.xml add
 
 <message id="activitylog_mwabeantragen">%s hat eine Spieleranpassung beantragt.</message>
 
